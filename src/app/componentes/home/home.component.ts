@@ -6,7 +6,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-
+  perfil = 'Admin';
+  lista = [
+    {
+      name : "Javier",
+      perfil : 'Admin'
+    },
+    {
+      name : "Juanca",
+      perfil : 'Dev'
+    },
+    {
+      name : "Tito",
+      perfil : 'DBA'
+    },
+  ]
   constructor() { }
 
   ngOnInit(): void {

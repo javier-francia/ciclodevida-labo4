@@ -1,1 +1,7 @@
-<p>home works!</p>
+<h1 *ngIf="perfil == 'Admin'">Bienvenidx Admin!</h1>
+<h1 [hidden]="perfil == 'Admin'">Bienvenidx</h1>
+
+<div *ngFor="let item of lista">
+    <p>Nombre: {{item.name}}</p>
+    <p>Perfil: {{item.perfil}}</p>
+</div>
